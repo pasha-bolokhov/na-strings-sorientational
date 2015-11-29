@@ -1,0 +1,85 @@
+\documentclass{letter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{letterpaper}
+
+%% common definitions
+\newcommand{\p}{\partial}
+\newcommand{\wt}{\widetilde}
+\newcommand{\ov}{\overline}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\md}{\mathcal{D}}
+
+
+\newcommand{\GeV}{{\rm GeV}}
+\newcommand{\eV}{{\rm eV}}
+\newcommand{\Heff}{{\mathcal{H}_{\rm eff}}}
+\newcommand{\Leff}{{\mathcal{L}_{\rm eff}}}
+\newcommand{\el}{{\rm EM}}
+\newcommand{\uflavor}{\mathbf{1}_{\rm flavor}}
+\newcommand{\lgr}{\left\lgroup}
+\newcommand{\rgr}{\right\rgroup}
+
+\newcommand{\LUV}{\Lambda_{\rm UV}}
+\newcommand{\LNC}{\Lambda_{\rm NC}}
+\newcommand{\LQCD}{\Lambda_{\rm QCD}}
+\newcommand{\Mpl}{M_{\rm Pl}}
+\newcommand{\suc}{{{\rm SU}_{\rm C}(3)}}
+\newcommand{\sul}{{{\rm SU}_{\rm L}(2)}}
+\newcommand{\sutw}{{\rm SU}(2)}
+\newcommand{\suth}{{\rm SU}(3)}
+\newcommand{\ue}{{\rm U}(1)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Slash character...
+\def\slashed#1{\setbox0=\hbox{$#1$}             % set a box for #1
+   \dimen0=\wd0                                 % and get its size
+   \setbox1=\hbox{/} \dimen1=\wd1               % get size of /
+   \ifdim\dimen0>\dimen1                        % #1 is bigger
+      \rlap{\hbox to \dimen0{\hfil/\hfil}}      % so center / in box
+      #1                                        % and print #1
+   \else                                        % / is bigger
+      \rlap{\hbox to \dimen1{\hfil$#1$\hfil}}   % so center #1
+      /                                         % and print /
+   \fi}                                        %
+
+%%EXAMPLE:  $\slashed{E}$ or $\slashed{E}_{t}$
+
+%%
+
+
+\begin{document}
+
+  Superorientational zero-modes of the NA string in ${\mathcal N}=2$ U(N) SQCD.
+
+  Here $ n^l $, $ n^*_l $ are in fact the fields of the $ CP(N-1) $ model, that is,
+they are normalized to $ 2\beta $:
+\[
+	n^*_l n^l ~=~ 2\beta~.
+\]
+
+The ``conjugate'' zero-modes:
+\begin{align*}
+%
+{\psi}_{2} & ~~=~~ \frac{\phi_1^2 ~-~ \phi_2^2}{\phi_2} \cdot \frac{ \xi_L n^*}{2\beta}   \\
+%
+\tilde{\psi}_{1}  & ~~=~~ - \frac{\phi_1^2 ~-~ \phi_2^2}{\phi_2} \cdot \frac{ n \ov{\xi}_R  } {2\beta} \\
+%
+\ov{\lambda}^{\dot{1}\ SU(N)}_{\ 1} & ~~=~~ - i \sqrt{2}\, \frac{ x^1 ~+~ i\, x^2 }{r^2} \frac{\phi_1}{\phi_2} f_N \cdot \frac{ \xi_L n^*}{2\beta} \\
+%
+\ov{\lambda}^{\dot{2}\ SU(N)}_{\ 2} & ~~=~~  i \sqrt{2}\, \frac{ x^1 ~-~ i\, x^2 }{r^2} \frac{\phi_1}{\phi_2} f_N \cdot \frac{ n \ov{\xi}_R} {2\beta} 
+\end{align*}
+
+
+The ``original'' zero-modes:
+\begin{align*}
+%
+\overline{\psi}_{\dot{2}Ak} & ~~=~~ \frac{\phi_1^2 ~-~ \phi_2^2}{\phi_2} \cdot \frac{ n \overline{\xi}_L}{2\beta}   \\
+%
+\overline{\tilde{\psi}}_{\dot{1}}^{kA}  & ~~=~~ - \frac{\phi_1^2 ~-~ \phi_2^2}{\phi_2} \cdot \frac{ \xi_R n^* } {2\beta} \\
+%
+\lambda^{11\ SU(N)} & ~~=~~ i \sqrt{2}\, \frac{ x^1 ~-~ i\, x^2 }{r^2} \frac{\phi_1}{\phi_2} f_N \cdot \frac{ n \overline{\xi}_L}{2\beta} \\
+%
+\lambda^{22\ SU(N)} & ~~=~~ - i \sqrt{2}\, \frac{ x^1 ~+~ i\, x^2 }{r^2} \frac{\phi_1}{\phi_2} f_N \cdot \frac{ \xi_R n^* } {2\beta} \\
+\end{align*}
+
+\end{document}
